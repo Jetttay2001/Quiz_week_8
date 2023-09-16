@@ -12,7 +12,6 @@ cursor = conn.cursor()
 # Taking the data from the database
 cursor.execute("SELECT year, co2, temperature FROM ClimateData")
 
-# Iterate through the results and populate the lists
 for row in cursor.fetchall():
     years.append(row[0])
     co2.append(row[1])
